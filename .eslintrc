@@ -1,0 +1,59 @@
+{
+  "env": {
+    "node": true,
+    "browser": true,
+    "commonjs": true,
+    "es2021": true,
+    "builtin": true,
+    "jest": true
+  },
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "prettier/prettier": "off",
+    "max-len": ["error", 200],
+    "quotes": ["error", "single"],
+    "max-statements": "off",
+    "no-console": "off",
+    "react/wrap-multilines": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "no-invalid-this": "off",
+    "valid-jsdoc": "off",
+    "max-params": ["error", 4],
+    "no-unused-vars": 0,
+    "@typescript-eslint/no-explicit-any": "off",
+    "comma-dangle": "off",
+    "jsx-quotes": "off",
+    "arrow-parens": "off",
+    "no-nested-ternary": "off",
+    "@typescript-eslint/no-unused-vars": 1,
+    "react/display-name": "off",
+    "complexity": "off",
+    "jsx-no-static-element-interactions": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "react/prop-types": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
